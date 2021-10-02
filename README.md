@@ -51,4 +51,8 @@ A more sophisticated use would be as an initial information gathering tool to fa
 # Acknowledgements
 
 codebase (heavily rewritten) originated as a messy final project, by Brandi Durham and myself completed during our Operating Systems class at College of Charleston.
+
+I see no reason to write all this code from scratch, code listed here for distributed scraping over tor is more than adequate.
+
+http://blog.databigbang.com/distributed-scraping-with-multiple-tor-circuits/
 -
