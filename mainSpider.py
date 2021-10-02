@@ -57,6 +57,10 @@ MAX_THREADS = 12
 MAX_RETRIES = 1
 DEFAULT_URL = "https://compsci.cofc.edu"
 DEFAULT_DEPTH = 2
+INFO_LEVEL=2 #normal (0), verbose (1), -vv (2)
+
+VERBOSE=1
+VVERBOSE=2
 
 #GLOBAL VARIABLES
 ACTIVE_THREADS = []
@@ -65,7 +69,7 @@ WORK_QUEUE = []
 CURRENT_QUEUE_SIZE = 0
 QUEUE_MUTEX = Lock()
 
-NUM = 0
+OP_MODE = 0
 SEARCH = "None"
 
 LINKS_LIST = defaultdict(list)
@@ -122,6 +126,7 @@ def signal_handler(incomingsignal, frame):
 
 ## Fire up the threads
 def startAllThreads():
+
     global mSignal
     mSignal = GO
     count = 0
